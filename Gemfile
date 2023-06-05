@@ -21,6 +21,8 @@ gem 'sidekiq', '~> 7.1', '>= 7.1.1'
 gem 'sidekiq-cron', '~> 1.10', '>= 1.10.1'
 gem 'google-cloud-storage', '~> 1.44', require: false
 
+gem 'slim-rails', '~> 3.6', '>= 3.6.2'
+
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
