@@ -23,6 +23,8 @@ gem 'google-cloud-storage', '~> 1.44', require: false
 
 gem 'slim-rails', '~> 3.6', '>= 3.6.2'
 
+gem 'activerecord-import', '~> 1.4', '>= 1.4.1'
+
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
