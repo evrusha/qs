@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_05_080455) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "transactions", force: :cascade do |t|
+  create_table "transactions", id: false, force: :cascade do |t|
     t.datetime "datetime"
     t.string "code"
     t.string "operation_code"
@@ -44,8 +44,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_05_080455) do
     t.float "length"
     t.float "width"
     t.float "height"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

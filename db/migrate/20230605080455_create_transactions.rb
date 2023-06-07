@@ -1,6 +1,6 @@
 class CreateTransactions < ActiveRecord::Migration[7.0]
   def change
-    create_table :transactions do |t|
+    create_table :transactions, id: false do |t|
       t.datetime :datetime
       t.string :code
       t.string :operation_code
@@ -30,7 +30,6 @@ class CreateTransactions < ActiveRecord::Migration[7.0]
       t.float :length
       t.float :width
       t.float :height
-      t.timestamps
     end
   end
 end
