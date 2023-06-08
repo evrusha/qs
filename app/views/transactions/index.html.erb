@@ -1,0 +1,23 @@
+<%= form_with url: import_path, method: :post do |f| %>
+  <%= f.file_field :file, accept: '.csv' %>
+  <%= f.submit 'dsfsdf', class: 'btn btn-primary' %>
+<% end %>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <% Transaction.column_names.each do |column_name| %>
+        <th><%= column_name.humanize %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <% transaction.attributes.values.each do |value| %>
+          <td><%= value %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

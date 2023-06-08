@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
   def index
-    @transactions = Transaction.first(5)
+    @transactions = Transaction.first 23
   end
 
   def import

@@ -21,10 +21,6 @@ gem 'rubocop-rails', require: false
 gem 'sidekiq', '~> 7.1', '>= 7.1.1'
 gem 'sidekiq-cron', '~> 1.10', '>= 1.10.1'
 
-gem 'slim-rails', '~> 3.6', '>= 3.6.2'
-
-gem 'activerecord-import', '~> 1.4', '>= 1.4.1'
-
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
