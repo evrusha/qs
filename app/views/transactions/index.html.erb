@@ -6,7 +6,7 @@
 <table class="table table-sm">
   <thead>
     <tr>
-      <% Transaction.column_names.each do |column_name| %>
+      <% @transactions.first.attributes.keys.each do |column_name| %>
         <th><%= column_name.humanize %></th>
       <% end %>
     </tr>

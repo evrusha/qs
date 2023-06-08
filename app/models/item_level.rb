@@ -1,0 +1,2 @@
+class ItemLevel < ApplicationRecord
+end

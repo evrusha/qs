@@ -10,9 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_05_080455) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_08_120858) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "item_levels", id: false, force: :cascade do |t|
+    t.string "level"
+    t.string "item_number"
+  end
 
   create_table "transactions", id: false, force: :cascade do |t|
     t.datetime "datetime"
